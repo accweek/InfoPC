@@ -1,0 +1,24 @@
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\Web_Logic\bin\Debug\Web_Logic.exe.config
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\Web_Logic\bin\Debug\Web_Logic.exe
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\Web_Logic\bin\Debug\Web_Logic.pdb
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\Web_Logic\bin\Debug\Business_Logic.dll
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\Web_Logic\bin\Debug\Business_Logic.pdb
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\Web_Logic\obj\Debug\Web_Logic.csprojAssemblyReference.cache
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\Web_Logic\obj\Debug\Web_Logic.Form1.resources
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\Web_Logic\obj\Debug\Web_Logic.Properties.Resources.resources
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\Web_Logic\obj\Debug\Web_Logic.csproj.GenerateResource.cache
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\Web_Logic\obj\Debug\Web_Logic.csproj.CopyComplete
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\Web_Logic\obj\Debug\Web_Logic.exe
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\Web_Logic\obj\Debug\Web_Logic.pdb
+C:\Users\admin\Desktop\PC_Information1\Web_Logic\bin\Debug\Web_Logic.exe.config
+C:\Users\admin\Desktop\PC_Information1\Web_Logic\bin\Debug\Web_Logic.exe
+C:\Users\admin\Desktop\PC_Information1\Web_Logic\bin\Debug\Web_Logic.pdb
+C:\Users\admin\Desktop\PC_Information1\Web_Logic\bin\Debug\BusinessLogic.dll
+C:\Users\admin\Desktop\PC_Information1\Web_Logic\bin\Debug\BusinessLogic.pdb
+C:\Users\admin\Desktop\PC_Information1\Web_Logic\obj\Debug\Web_Logic.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\PC_Information1\Web_Logic\obj\Debug\Web_Logic.Form1.resources
+C:\Users\admin\Desktop\PC_Information1\Web_Logic\obj\Debug\Web_Logic.Properties.Resources.resources
+C:\Users\admin\Desktop\PC_Information1\Web_Logic\obj\Debug\Web_Logic.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\PC_Information1\Web_Logic\obj\Debug\Web_Logic.csproj.CopyComplete
+C:\Users\admin\Desktop\PC_Information1\Web_Logic\obj\Debug\Web_Logic.exe
+C:\Users\admin\Desktop\PC_Information1\Web_Logic\obj\Debug\Web_Logic.pdb

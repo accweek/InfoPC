@@ -1,0 +1,5 @@
+C:\Users\admin\Desktop\PC_Information1\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\admin\Desktop\PC_Information1\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\admin\Desktop\PC_Information1\BusinessLogic\obj\Debug\BusinessLogic.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\PC_Information1\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\admin\Desktop\PC_Information1\BusinessLogic\obj\Debug\BusinessLogic.pdb

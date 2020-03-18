@@ -1,0 +1,8 @@
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\PC_Information\bin\Debug\netstandard2.0\Business_Logic.deps.json
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\PC_Information\bin\Debug\netstandard2.0\Business_Logic.dll
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\PC_Information\obj\Debug\netstandard2.0\Business_Logic.AssemblyInfoInputs.cache
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\PC_Information\obj\Debug\netstandard2.0\Business_Logic.AssemblyInfo.cs
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\PC_Information\bin\Debug\netstandard2.0\Business_Logic.pdb
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\PC_Information\obj\Debug\netstandard2.0\Business_Logic.csprojAssemblyReference.cache
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\PC_Information\obj\Debug\netstandard2.0\Business_Logic.dll
+C:\Users\Мой\Desktop\visual 19 projects\PC_Information\PC_Information\obj\Debug\netstandard2.0\Business_Logic.pdb
