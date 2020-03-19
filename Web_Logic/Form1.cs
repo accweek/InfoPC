@@ -97,5 +97,36 @@ namespace Web_Logic
             label21.Text = Disks.GetDriveSize() + " " + "ГБ";
         }
 
+
+        //Мат плата 
+        private void button25_Click(object sender, EventArgs e)
+        {
+            label28.Text = Other.GetBoardMaker();
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            label27.Text = Other.GetBoardProductId();
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            label26.Text = Other.GetBIOSmaker();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            label25.Text = Other.GetBIOSserNo();
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            label24.Text = Other.GetBIOScaption();
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            label29.Text = Other.GetBIOSStatusInfo();
+        }
     }
 }

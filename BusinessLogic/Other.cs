@@ -45,9 +45,6 @@ namespace BusinessLogic
             return "Product: Unknown";
         }
 
-      
-
-
         /// <summary>
         /// Производитель BIOS.
         /// </summary>
@@ -65,7 +62,6 @@ namespace BusinessLogic
             }
             return "BIOS Maker: Unknown";
         }
-
 
         /// <summary>
         /// Номер серии BIOS.
@@ -86,7 +82,6 @@ namespace BusinessLogic
             return "BIOS Serial Number: Unknown";
         }
 
-
         /// <summary>
         /// Подпись BIOS.
         /// </summary>
@@ -106,8 +101,22 @@ namespace BusinessLogic
             return "BIOS Caption: Unknown";
         }
 
-      
+        public static string GetBIOSStatusInfo()
+        {
+            ManagementObjectSearcher mangnmt = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_MotherboardDevice");
+            
+            foreach (ManagementObject strt in mangnmt.Get())
+            {
+                try
+                {
+                    return strt.GetPropertyValue("PrimaryBusType").ToString();
+                }
+                catch { return "Failed to determine"; }
+            }
+            return "Failed to determine";
+        }
 
-       
+
+
     }
 }
