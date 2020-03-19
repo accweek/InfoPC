@@ -18,9 +18,15 @@ namespace BusinessLogic
             String info = String.Empty;
             foreach (ManagementObject mo in moc)
             {
-                info = (string)mo["Name"];
-                //mo.Properties["Name"].Value.ToString();
-                //break;
+                try
+                {
+
+                    info = (string)mo["Name"];
+                    //mo.Properties["Name"].Value.ToString();
+                    //break;
+                }
+
+                catch { return "Failed to determine"; }
             }
             return info;
         }
@@ -40,7 +46,7 @@ namespace BusinessLogic
                 }
                 catch { }
             }
-            return "User Account Name: Unknown";
+            return "Failed to determine";
         }
 
 
@@ -60,7 +66,7 @@ namespace BusinessLogic
                 }
                 catch { }
             }
-            return "Keyboard Name: Unknown";
+            return "Failed to determine";
         }
 
         /// <summary>
@@ -78,7 +84,7 @@ namespace BusinessLogic
                 }
                 catch { }
             }
-            return "Keyboard Description: Unknown";
+            return "Failed to determine";
         }
 
         /// <summary>
@@ -92,11 +98,15 @@ namespace BusinessLogic
             string MACAddress = String.Empty;
             foreach (ManagementObject mo in moc)
             {
-                if (MACAddress == String.Empty)
+                try
                 {
-                    if ((bool)mo["IPEnabled"] == true) MACAddress = mo["MacAddress"].ToString();
+                    if (MACAddress == String.Empty)
+                    {
+                        if ((bool)mo["IPEnabled"] == true) MACAddress = mo["MacAddress"].ToString();
+                    }
+                    mo.Dispose();
                 }
-                mo.Dispose();
+                catch { return "Failed to determine"; }
             }
             MACAddress = MACAddress.Replace(":", "");
             return MACAddress;

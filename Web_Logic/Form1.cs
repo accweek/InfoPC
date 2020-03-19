@@ -83,7 +83,7 @@ namespace Web_Logic
 
         private void button18_Click(object sender, EventArgs e)
         {
-            label18.Text = Disks.GetDriveBlockSize();
+            label18.Text = Disks.GetDriveManufacturer();
         }
 
         private void button19_Click(object sender, EventArgs e)
@@ -93,8 +93,9 @@ namespace Web_Logic
 
         private void button20_Click(object sender, EventArgs e)
         {
-            label20.Text = Disks.GetDriveFreeSize();
-            label21.Text = Disks.GetDriveSize();
+            label20.Text = Disks.GetDriveFreeSize() + " " + "ГБ";
+            label21.Text = Disks.GetDriveSize() + " " + "ГБ";
         }
+
     }
 }
