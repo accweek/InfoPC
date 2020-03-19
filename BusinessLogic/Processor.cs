@@ -18,12 +18,16 @@ namespace BusinessLogic
             String info = String.Empty;
             foreach (ManagementObject mo in moc)
             {
-                string name = (string)mo["Name"];
-                name = name.Replace("(TM)", "™").Replace("(tm)", "™").Replace("(R)", "®").Replace("(r)", "®").Replace("(C)", "©").Replace("(c)", "©").Replace("    ", " ").Replace("  ", " ");
+                try
+                {
+                    string name = (string)mo["Name"];
+                    name = name.Replace("(TM)", "™").Replace("(tm)", "™").Replace("(R)", "®").Replace("(r)", "®").Replace("(C)", "©").Replace("(c)", "©").Replace("    ", " ").Replace("  ", " ");
 
-                info = name + ", " + (string)mo["Caption"] + ", " + (string)mo["SocketDesignation"];
-                //mo.Properties["Name"].Value.ToString();
-                //break;
+                    info = name + ", " + (string)mo["Caption"] + ", " + (string)mo["SocketDesignation"];
+                    //mo.Properties["Name"].Value.ToString();
+                    //break;
+                }
+                catch { return "Failed to determine"; }
             }
             return info;
         }
@@ -43,7 +47,7 @@ namespace BusinessLogic
                 }
                 catch { }
             }
-            return "Processor Description: Unknown";
+            return "Failed to determine";
         }
 
         /// <summary>
@@ -57,7 +61,11 @@ namespace BusinessLogic
             string result = "";
             foreach (ManagementObject strt in mcol)
             {
-                result += Convert.ToString(strt["NumberOfCores"]);
+                try
+                {
+                    result += Convert.ToString(strt["NumberOfCores"]);
+                }
+                catch { return "Failed to determine"; }
             }
             return result;
         }
@@ -74,7 +82,11 @@ namespace BusinessLogic
             string result = "";
             foreach (ManagementObject strt in mcol)
             {
-                result += Convert.ToString(strt["Manufacturer"]);
+                try
+                {
+                    result += Convert.ToString(strt["Manufacturer"]);
+                }
+                catch { return "Failed to determine"; }
             }
             return result.ToString();
         }
@@ -92,7 +104,11 @@ namespace BusinessLogic
             string result = "";
             foreach (ManagementObject strt in mcol)
             {
-                result += Convert.ToString(strt["CurrentClockSpeed"]);
+                try
+                {
+                    result += Convert.ToString(strt["CurrentClockSpeed"]);
+                }
+                catch { return "Failed to determine"; }
             }
             return result;
         }

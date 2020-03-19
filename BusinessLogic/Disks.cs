@@ -18,8 +18,14 @@ namespace BusinessLogic
             string result = "";
             foreach (ManagementObject strt in mcol)
             {
-                result += Convert.ToString(strt["VolumeSerialNumber"]);
+                try
+                {
+                    result += Convert.ToString(strt["VolumeSerialNumber"]);
+
+                }
+                catch { return "Failed to determine"; }
             }
+
             return result;
         }
 
@@ -27,22 +33,20 @@ namespace BusinessLogic
         /// Призводитель диска
         /// </summary>
         /// <returns></returns>
-        public static String GetDriveBlockSize()
+        public static String GetDriveManufacturer()
         {
-            ManagementClass mangnmt = new ManagementClass("Win32_LogicalDisk");
-            ManagementObjectCollection mcol = mangnmt.GetInstances();
-            string result = "";
-            foreach (ManagementObject strt in mcol)
+            ManagementObjectSearcher mangnmt = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_LogicalDisk");
+            
+            foreach (ManagementObject strt in mangnmt.Get())
             {
                 try
                 {
-                    result += Convert.ToString(strt["Manufacturer"]);
-
+                    return strt.GetPropertyValue("Manufacturer").ToString();
                 }
-                catch { }
+                catch {  }
             }
 
-            return "Oshibka";
+            return "Failed to determine";
         }
 
         /// <summary>
@@ -56,7 +60,11 @@ namespace BusinessLogic
             string result = "";
             foreach (ManagementObject strt in mcol)
             {
-                result += Convert.ToDouble(strt["Size"]) /1024 /1024 /1024;
+                try
+                {
+                    result += Convert.ToDouble(strt["Size"]) /1024 /1024 /1024;
+                }
+                catch { return "Failed to determine"; }
             }
             return result;
         }
@@ -72,10 +80,13 @@ namespace BusinessLogic
             string result = "";
             foreach (ManagementObject strt in mcol)
             {
-                result += Convert.ToString(strt["Name"]);
+                try
+                {
+                    result += Convert.ToString(strt["Name"]);
+                }
+                catch { return "Failed to determine"; }
             }
-            return result;
-        
+            return result;       
         }
 
         /// <summary>
@@ -91,9 +102,9 @@ namespace BusinessLogic
                 {
                     return wmi.GetPropertyValue("Drive").ToString();
                 }
-                catch { }
+                catch {  }
             }
-            return "CD ROM Drive Letter: Unknown";
+            return "Failed to determine";
         }
 
         /// <summary>
@@ -107,7 +118,11 @@ namespace BusinessLogic
             string result = "";
             foreach (ManagementObject strt in mcol)
             {
-                result += Convert.ToDouble(strt["FreeSpace"]) / 1024 / 1024 / 1024;
+                try
+                {
+                    result += Convert.ToDouble(strt["FreeSpace"]) / 1024 / 1024 / 1024;
+                }
+                catch { return "Failed to determine"; }
             }
             return result;
         }
