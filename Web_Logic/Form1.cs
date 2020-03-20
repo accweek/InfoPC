@@ -116,7 +116,7 @@ namespace Web_Logic
 
         private void button22_Click(object sender, EventArgs e)
         {
-            label25.Text = Other.GetBIOSserNo();
+           
         }
 
         private void button21_Click(object sender, EventArgs e)
@@ -128,5 +128,50 @@ namespace Web_Logic
         {
             label29.Text = Other.GetBIOSStatusInfo();
         }
+
+
+        // OS
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            label11.Text = OS.GetOSName();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            label12.Text = OS.GetOSInstallDate();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            label13.Text = OS.GetOSRegisteredUser();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            label14.Text = OS.GetOSWindowsDirectory();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            label15.Text = OS.GetOSSystemDirectory();
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            label30.Text = OS.GetOSVersion();
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            label31.Text = OS.GetOSNumberOfUsers();
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+
+        }
+
+    
     }
 }

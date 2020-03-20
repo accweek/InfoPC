@@ -11,25 +11,18 @@ namespace BusinessLogic
         /// Информация о процессоре
         /// </summary>
         /// <returns></returns>
-        public static String GetProcessorInformation()
+        public static string GetProcessorInformation()
         {
-            ManagementClass mc = new ManagementClass("win32_processor");
-            ManagementObjectCollection moc = mc.GetInstances();
-            String info = String.Empty;
-            foreach (ManagementObject mo in moc)
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM win32_processor");
+            foreach (ManagementObject wmi in searcher.Get())
             {
                 try
                 {
-                    string name = (string)mo["Name"];
-                    name = name.Replace("(TM)", "™").Replace("(tm)", "™").Replace("(R)", "®").Replace("(r)", "®").Replace("(C)", "©").Replace("(c)", "©").Replace("    ", " ").Replace("  ", " ");
-
-                    info = name + ", " + (string)mo["Caption"] + ", " + (string)mo["SocketDesignation"];
-                    //mo.Properties["Name"].Value.ToString();
-                    //break;
+                    return wmi.GetPropertyValue("Name").ToString();
                 }
-                catch { return "Failed to determine"; }
+                catch { }
             }
-            return info;
+            return "Failed to determine";
         }
 
         /// <summary>
@@ -112,5 +105,7 @@ namespace BusinessLogic
             }
             return result;
         }
+
+
     }
 }

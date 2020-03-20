@@ -70,7 +70,7 @@ namespace BusinessLogic
         }
 
         /// <summary>
-        /// Имя диска
+        /// Имена дисков
         /// </summary>
         /// <returns></returns>
         public static string GetDriveName()
@@ -89,8 +89,24 @@ namespace BusinessLogic
             return result;       
         }
 
+        public static string GetVolumeName()
+        {
+            ManagementClass mangnmt = new ManagementClass("Win32_LogicalDisk");
+            ManagementObjectCollection mcol = mangnmt.GetInstances();
+            string result = "";
+            foreach (ManagementObject strt in mcol)
+            {
+                try
+                {
+                    result += Convert.ToString(strt["VolumeName"]);
+                }
+                catch { return "Failed to determine"; }
+            }
+            return result;
+        }
+
         /// <summary>
-        /// Драйвера CDRom
+        /// Имя CDRom
         /// </summary>
         /// <returns></returns>
         public static string GetCdRomDrive()

@@ -63,24 +63,6 @@ namespace BusinessLogic
             return "BIOS Maker: Unknown";
         }
 
-        /// <summary>
-        /// Номер серии BIOS.
-        /// </summary>
-        /// <returns></returns>
-        public static string GetBIOSserNo()
-        {
-            ManagementObjectSearcher searcher = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_BIOS");
-            foreach (ManagementObject wmi in searcher.Get())
-            {
-                try
-                {
-                    return wmi.GetPropertyValue("SerialNumber").ToString();
-
-                }
-                catch { }
-            }
-            return "BIOS Serial Number: Unknown";
-        }
 
         /// <summary>
         /// Подпись BIOS.
@@ -101,6 +83,10 @@ namespace BusinessLogic
             return "BIOS Caption: Unknown";
         }
 
+        /// <summary>
+        /// BIOS статус
+        /// </summary>
+        /// <returns></returns>
         public static string GetBIOSStatusInfo()
         {
             ManagementObjectSearcher mangnmt = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_MotherboardDevice");
@@ -115,6 +101,8 @@ namespace BusinessLogic
             }
             return "Failed to determine";
         }
+
+       
 
 
 
