@@ -8,3 +8,8 @@ C:\Users\admin\Desktop\InfoPCGit\BusinessLogic\bin\Debug\BusinessLogic.pdb
 C:\Users\admin\Desktop\InfoPCGit\BusinessLogic\obj\Debug\BusinessLogic.csprojAssemblyReference.cache
 C:\Users\admin\Desktop\InfoPCGit\BusinessLogic\obj\Debug\BusinessLogic.dll
 C:\Users\admin\Desktop\InfoPCGit\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\Users\Мой\InfoPC\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\Мой\InfoPC\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Мой\InfoPC\BusinessLogic\obj\Debug\BusinessLogic.csprojAssemblyReference.cache
+C:\Users\Мой\InfoPC\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Мой\InfoPC\BusinessLogic\obj\Debug\BusinessLogic.pdb

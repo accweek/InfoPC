@@ -34,3 +34,15 @@ C:\Users\admin\Desktop\InfoPCGit\Web_Logic\obj\Debug\Web_Logic.csproj.GenerateRe
 C:\Users\admin\Desktop\InfoPCGit\Web_Logic\obj\Debug\Web_Logic.csproj.CopyComplete
 C:\Users\admin\Desktop\InfoPCGit\Web_Logic\obj\Debug\Web_Logic.exe
 C:\Users\admin\Desktop\InfoPCGit\Web_Logic\obj\Debug\Web_Logic.pdb
+C:\Users\Мой\InfoPC\Web_Logic\bin\Debug\Web_Logic.exe.config
+C:\Users\Мой\InfoPC\Web_Logic\bin\Debug\Web_Logic.exe
+C:\Users\Мой\InfoPC\Web_Logic\bin\Debug\Web_Logic.pdb
+C:\Users\Мой\InfoPC\Web_Logic\bin\Debug\BusinessLogic.dll
+C:\Users\Мой\InfoPC\Web_Logic\bin\Debug\BusinessLogic.pdb
+C:\Users\Мой\InfoPC\Web_Logic\obj\Debug\Web_Logic.csprojAssemblyReference.cache
+C:\Users\Мой\InfoPC\Web_Logic\obj\Debug\Web_Logic.Form1.resources
+C:\Users\Мой\InfoPC\Web_Logic\obj\Debug\Web_Logic.Properties.Resources.resources
+C:\Users\Мой\InfoPC\Web_Logic\obj\Debug\Web_Logic.csproj.GenerateResource.cache
+C:\Users\Мой\InfoPC\Web_Logic\obj\Debug\Web_Logic.csproj.CopyComplete
+C:\Users\Мой\InfoPC\Web_Logic\obj\Debug\Web_Logic.exe
+C:\Users\Мой\InfoPC\Web_Logic\obj\Debug\Web_Logic.pdb

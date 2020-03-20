@@ -66,6 +66,10 @@
             this.label16 = new System.Windows.Forms.Label();
             this.button16 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
@@ -77,19 +81,16 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label29 = new System.Windows.Forms.Label();
+            this.button26 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.button26 = new System.Windows.Forms.Button();
-            this.label29 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -105,7 +106,6 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -339,7 +339,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(260, 30);
             this.button6.TabIndex = 1;
-            this.button6.Text = "Информация о процессоре";
+            this.button6.Text = "Название процессора";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -420,7 +420,7 @@
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(210, 30);
             this.button20.TabIndex = 12;
-            this.button20.Text = "Место на диске";
+            this.button20.Text = "Место на жестком диске";
             this.button20.UseVisualStyleBackColor = true;
             this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
@@ -440,7 +440,7 @@
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(210, 30);
             this.button19.TabIndex = 10;
-            this.button19.Text = "Драйвера CDRom";
+            this.button19.Text = "Имя CDRom";
             this.button19.UseVisualStyleBackColor = true;
             this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
@@ -480,7 +480,7 @@
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(210, 30);
             this.button17.TabIndex = 6;
-            this.button17.Text = "Имя диска";
+            this.button17.Text = "Диски";
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
@@ -506,6 +506,10 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label31);
+            this.tabPage4.Controls.Add(this.label30);
+            this.tabPage4.Controls.Add(this.button28);
+            this.tabPage4.Controls.Add(this.button27);
             this.tabPage4.Controls.Add(this.button15);
             this.tabPage4.Controls.Add(this.button14);
             this.tabPage4.Controls.Add(this.button13);
@@ -523,45 +527,89 @@
             this.tabPage4.Text = "Операционная система";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label31.Location = new System.Drawing.Point(270, 412);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(0, 20);
+            this.label31.TabIndex = 14;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label30.Location = new System.Drawing.Point(270, 337);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(0, 20);
+            this.label30.TabIndex = 13;
+            // 
+            // button28
+            // 
+            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button28.Location = new System.Drawing.Point(20, 392);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(200, 61);
+            this.button28.TabIndex = 11;
+            this.button28.Text = "Количество пользователей";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
+            // 
+            // button27
+            // 
+            this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button27.Location = new System.Drawing.Point(20, 332);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(200, 30);
+            this.button27.TabIndex = 10;
+            this.button27.Text = "Версия ОС";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
+            // 
             // button15
             // 
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button15.Location = new System.Drawing.Point(20, 260);
+            this.button15.Location = new System.Drawing.Point(20, 273);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(200, 30);
             this.button15.TabIndex = 9;
-            this.button15.Text = "button15";
+            this.button15.Text = "Системный директорий";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button14
             // 
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button14.Location = new System.Drawing.Point(20, 200);
+            this.button14.Location = new System.Drawing.Point(20, 214);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(200, 30);
             this.button14.TabIndex = 8;
-            this.button14.Text = "button14";
+            this.button14.Text = "Директорий ОС";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button13
             // 
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button13.Location = new System.Drawing.Point(20, 140);
+            this.button13.Location = new System.Drawing.Point(20, 128);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(200, 30);
+            this.button13.Size = new System.Drawing.Size(200, 59);
             this.button13.TabIndex = 7;
-            this.button13.Text = "button13";
+            this.button13.Text = "Зарегестрированный пользователь";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button12
             // 
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button12.Location = new System.Drawing.Point(20, 80);
+            this.button12.Location = new System.Drawing.Point(20, 74);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(200, 30);
             this.button12.TabIndex = 6;
-            this.button12.Text = "button12";
+            this.button12.Text = "Дата установки";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button11
             // 
@@ -570,48 +618,45 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(200, 30);
             this.button11.TabIndex = 5;
-            this.button11.Text = "button11";
+            this.button11.Text = "Нименование";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.Location = new System.Drawing.Point(270, 265);
+            this.label15.Location = new System.Drawing.Point(270, 278);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(60, 20);
+            this.label15.Size = new System.Drawing.Size(0, 20);
             this.label15.TabIndex = 4;
-            this.label15.Text = "label15";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(270, 205);
+            this.label14.Location = new System.Drawing.Point(270, 219);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(60, 20);
+            this.label14.Size = new System.Drawing.Size(0, 20);
             this.label14.TabIndex = 3;
-            this.label14.Text = "label14";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(270, 145);
+            this.label13.Location = new System.Drawing.Point(270, 147);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 20);
+            this.label13.Size = new System.Drawing.Size(0, 20);
             this.label13.TabIndex = 2;
-            this.label13.Text = "label13";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(270, 85);
+            this.label12.Location = new System.Drawing.Point(270, 79);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(60, 20);
+            this.label12.Size = new System.Drawing.Size(0, 20);
             this.label12.TabIndex = 1;
-            this.label12.Text = "label12";
             // 
             // label11
             // 
@@ -619,21 +664,18 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label11.Location = new System.Drawing.Point(270, 25);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(60, 20);
+            this.label11.Size = new System.Drawing.Size(0, 20);
             this.label11.TabIndex = 0;
-            this.label11.Text = "label11";
             // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.label29);
             this.tabPage5.Controls.Add(this.button26);
             this.tabPage5.Controls.Add(this.button21);
-            this.tabPage5.Controls.Add(this.button22);
             this.tabPage5.Controls.Add(this.button23);
             this.tabPage5.Controls.Add(this.button24);
             this.tabPage5.Controls.Add(this.button25);
             this.tabPage5.Controls.Add(this.label24);
-            this.tabPage5.Controls.Add(this.label25);
             this.tabPage5.Controls.Add(this.label26);
             this.tabPage5.Controls.Add(this.label27);
             this.tabPage5.Controls.Add(this.label28);
@@ -644,27 +686,36 @@
             this.tabPage5.Text = "Другое";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label29.Location = new System.Drawing.Point(270, 264);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(0, 20);
+            this.label29.TabIndex = 21;
+            // 
+            // button26
+            // 
+            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button26.Location = new System.Drawing.Point(20, 259);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(200, 30);
+            this.button26.TabIndex = 20;
+            this.button26.Text = "Тип первичной шины";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
             // button21
             // 
             this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button21.Location = new System.Drawing.Point(20, 260);
+            this.button21.Location = new System.Drawing.Point(20, 199);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(200, 30);
             this.button21.TabIndex = 19;
             this.button21.Text = "Дата производства";
             this.button21.UseVisualStyleBackColor = true;
             this.button21.Click += new System.EventHandler(this.button21_Click);
-            // 
-            // button22
-            // 
-            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button22.Location = new System.Drawing.Point(20, 200);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(200, 30);
-            this.button22.TabIndex = 18;
-            this.button22.Text = "Номер серии BIOS.";
-            this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button23
             // 
@@ -703,21 +754,10 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label24.Location = new System.Drawing.Point(270, 265);
+            this.label24.Location = new System.Drawing.Point(270, 204);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(60, 20);
+            this.label24.Size = new System.Drawing.Size(0, 20);
             this.label24.TabIndex = 14;
-            this.label24.Text = "label24";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label25.Location = new System.Drawing.Point(270, 205);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(60, 20);
-            this.label25.TabIndex = 13;
-            this.label25.Text = "label25";
             // 
             // label26
             // 
@@ -725,9 +765,8 @@
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label26.Location = new System.Drawing.Point(270, 145);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(60, 20);
+            this.label26.Size = new System.Drawing.Size(0, 20);
             this.label26.TabIndex = 12;
-            this.label26.Text = "label26";
             // 
             // label27
             // 
@@ -735,9 +774,8 @@
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label27.Location = new System.Drawing.Point(270, 85);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(60, 20);
+            this.label27.Size = new System.Drawing.Size(0, 20);
             this.label27.TabIndex = 11;
-            this.label27.Text = "label27";
             // 
             // label28
             // 
@@ -745,40 +783,8 @@
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label28.Location = new System.Drawing.Point(270, 25);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(60, 20);
+            this.label28.Size = new System.Drawing.Size(0, 20);
             this.label28.TabIndex = 10;
-            this.label28.Text = "label28";
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(898, 588);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "tabPage6";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // button26
-            // 
-            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button26.Location = new System.Drawing.Point(20, 320);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(200, 30);
-            this.button26.TabIndex = 20;
-            this.button26.Text = "Тип первичной шины";
-            this.button26.UseVisualStyleBackColor = true;
-            this.button26.Click += new System.EventHandler(this.button26_Click);
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label29.Location = new System.Drawing.Point(270, 325);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(60, 20);
-            this.label29.TabIndex = 21;
-            this.label29.Text = "label29";
             // 
             // Form1
             // 
@@ -855,18 +861,19 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button button27;
     }
 }
 
